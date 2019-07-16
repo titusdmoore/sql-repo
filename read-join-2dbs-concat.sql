@@ -4,5 +4,5 @@ select concat(Lastname, ', ', Firstname) as 'Name', Description, FORMAT(Salary, 
 from Employee
 join Job
 	on JobId = Job.Id
+where not((Description = 'VP') or (Salary > 100000)) 
 order by Job.Salary desc, name desc;
-
