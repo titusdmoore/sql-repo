@@ -6,3 +6,4 @@ join OrderLines l
 	on o.Id = l.OrderId
 join Products p
 	on l.ProductId = p.Id
+where o.Id = 2031
